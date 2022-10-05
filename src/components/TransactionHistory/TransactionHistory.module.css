@@ -23,7 +23,9 @@
   padding: 8px;
   
 }
-
+.firstColmn{
+  text-transform: capitalize;
+}
 .transactionHistory thead{
   color: aliceblue;
 background-color: rgb(70, 201, 253);

@@ -1,7 +1,9 @@
 import React from 'react';
-import css from "./TransactionHistory.module.css"
+
 
 import PropTypes from 'prop-types';
+
+import css from "./TransactionHistory.module.css"
 
 const TransactionHistory = ({items}) =>{
   return (
@@ -16,7 +18,7 @@ const TransactionHistory = ({items}) =>{
       <tbody>
         {items.map(item => (
     <tr key={item.id}>
-      <td>{capitalizeFirstLetter(item.type)}</td>
+      <td className={css.firstColmn}>{item.type}</td>
       <td>{item.amount}</td>
       <td>{item.currency}</td>
     </tr>
@@ -28,11 +30,7 @@ const TransactionHistory = ({items}) =>{
 
 export default TransactionHistory
 
-///////////////////First letter to uppercase Function////////
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-///////////////////First letter to uppercase Function////////
+
 
 TransactionHistory.propTypes = {items:PropTypes.arrayOf(PropTypes.object).isRequired}
 TransactionHistory.propTypes = {

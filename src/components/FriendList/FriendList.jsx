@@ -1,11 +1,11 @@
-import css from "./FriendList.module.css"
-
 import PropTypes from 'prop-types';
 
+import css from "./FriendList.module.css"
 
 const FriendList = ({friends}) => {
   return (
     <ul className={css.friendList}>
+
       {friends.map ( item => (
         <li className={css.item} key={item.id}>
           <span
@@ -20,6 +20,7 @@ const FriendList = ({friends}) => {
           <p className={css.name}>{item.name}</p>
         </li>
       ))}
+      
     </ul>
   );
 };

@@ -1,6 +1,6 @@
-import CSS from './Profile.module.css';
-
 import PropTypes from 'prop-types';
+
+import CSS from './Profile.module.css';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
@@ -18,10 +18,12 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
           <span className={CSS.label}>Followers</span>
           <span className={CSS.quantity}>{followers}</span>
         </li>
+
         <li>
           <span className={CSS.label}>Views</span>
           <span className={CSS.quantity}>{views}</span>
         </li>
+        
         <li>
           <span className={CSS.label}>Likes</span>
           <span className={CSS.quantity}>{likes}</span>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import {FriendItem} from "./friendItem"
+import {FriendItem} from "../friendItem/friendItem"
 
 import css from "./FriendList.module.css"
 
